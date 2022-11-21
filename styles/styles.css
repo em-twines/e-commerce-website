@@ -3,11 +3,25 @@ html{
     font-size: 12;
 }
 
-h2{
+
+.home{
     font-size: 1.4rem; 
     font-weight: lighter;
+    text-align: left;
+    margin-left: 5vw; 
+    margin-right: 5vw; 
 }
 
+h2{
+    margin-top: 2rem;
+    font-size: 1.4rem; 
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 5vw; 
+    margin-right: 5vw; 
+}
+
+/*----------------------------HEADER DESKTOP-----------------------------------*/
 
 
 @media screen and (max-width: 720px){
@@ -54,6 +68,7 @@ h2{
     }
 }
 
+/*----------------------------HEADER MOBILE--------------------------------*/
 
 
 @media screen and (min-width: 720px){
@@ -64,7 +79,6 @@ h2{
         justify-content: space-between;
         width: auto;
         margin-top: 3vw; 
-        margin-bottom: 2vw;
         margin-left: 5vw; 
         margin-right: 5vw;
     }
@@ -101,6 +115,9 @@ h2{
 }
 
 
+/*--------------------------------HOME------------------------------*/
+
+
 .line{
     display: block;
     border-width:.5px;
@@ -119,6 +136,7 @@ h2{
     max-height: 30vw;
     width: 100%;
     margin-top: 5vh; 
+    margin-bottom: 10vh;
 }
 .gradient-left{
     display: flex;
@@ -142,7 +160,7 @@ h2{
 .text-right{
     display: flex;
     justify-content: left;
-    margin-left: 10rem;
+    margin-left: 12rem;
     margin-top: 15rem;
     height: 8rem;
     width: 10rem;
@@ -158,7 +176,7 @@ h2{
 .text-left{
     display: flex;
     justify-content: left;
-    margin-left: 12rem;
+    margin-left: 6rem;
     margin-top: 5rem;
     height: 8rem;
     width: 10rem;
@@ -174,4 +192,73 @@ h2{
     width: 65vw;
     z-index : 0;
 }
+
+.line1{
+    display: block;
+    border-width:.5px;
+    border-color: black;
+    background-color: black;
+    margin-left: 5vw; 
+    margin-right: 5vw; 
+    height: 1vh; 
+    width: 50%;
+
+}
+
+
+/*-----------------------------ABOUT US------------------------------------*/
+
+.grid{
+    display: grid;
+    margin-left: 5rem; 
+    margin-right: 5rem;
+    grid-gap: 1rem;
+    justify-content: space-around;
+    grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
+    padding: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+    margin-bottom: 5rem; 
+}
+
+.text-box-1{
+    display: flex; 
+    grid-area: 1 / span 2;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+}
+.image1{
+    grid-area: "3";
+    grid-row: 1 /span 3;
+    align-self: stretch;
+    max-width: 100%;
+    flex: 1;
+}
+
+.image2{
+    grid-area: "4";
+    grid-row: 2 /span 2;
+    align-self: stretch;
+    max-width: 100%;
+}
+
+.text-box-2{
+    display: flex; 
+    grid-area: "5";
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.text-box-3{
+    display: flex; 
+    grid-area: "8";
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+
+
+
+/*-----------------------------PRODUCTS------------------------------------*/
 
