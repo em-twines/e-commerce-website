@@ -3,6 +3,10 @@ html{
     font-size: 14;
 }
 
+h2{
+    font-size: 1.4rem; 
+    font-weight: 1;
+}
 header{
     display: flex;
     height: 5vw;
@@ -53,3 +57,37 @@ a:hover{
     width: auto;
     overflow: hidden;
 }
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    max-height: 30vw;
+    width: 100%;
+    margin-top: 5vh; 
+}
+.gradient-left{
+    display: flex;
+    background-image: linear-gradient(to left, transparent, black 40%);
+    height: 30vw;
+    width: 100vw;
+    z-index:1;
+    margin-right: -15vw;
+
+}   
+
+.gradient-right{
+    display: flex;
+    background-image: linear-gradient(to right, transparent, black 40%);
+    height: 30vw;
+    width: 100vw;
+    z-index:1;
+
+}
+
+.hands{
+    width: 65vw;
+    z-index : 0;
+}
+
+
+
