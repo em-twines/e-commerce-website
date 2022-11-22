@@ -19,9 +19,23 @@ h2{
     text-align: left;
     margin-left: 5vw; 
     margin-right: 5vw; 
+    transform: scale(1, 1.15);
+    letter-spacing: .1rem;
+
+}
+h3{
+    margin-top: 2rem;
+    font-size: 1rem; 
+    font-weight: lighter;
+    text-align: left;
+    margin-left: .75rem;
+    transform: scale(1, 1.15);
+    letter-spacing: .15rem;
 }
 
-/*----------------------------HEADER DESKTOP-----------------------------------*/
+
+
+/*----------------------------HEADER MOBILE-----------------------------------*/
 
 
 @media screen and (max-width: 720px){
@@ -68,7 +82,7 @@ h2{
     }
 }
 
-/*----------------------------HEADER MOBILE--------------------------------*/
+/*----------------------------HEADER DESKTOP--------------------------------*/
 
 
 @media screen and (min-width: 720px){
@@ -126,9 +140,9 @@ h2{
     margin-left: 5vw; 
     margin-right: 5vw; 
     height: 1vh; 
-    width: auto;
     overflow: hidden;
 }
+
 
 .home-container{
     display: flex;
@@ -138,6 +152,7 @@ h2{
     margin-top: 5vh; 
     margin-bottom: 10vh;
 }
+
 .gradient-left{
     display: flex;
     background-image: linear-gradient(to left, transparent, black 40%);
@@ -155,15 +170,15 @@ h2{
     width: 100vw;
     margin-left: -15vw;
     z-index:1;
-  
 }
+
 .text-right{
     display: flex;
     justify-content: left;
     margin-left: 12rem;
-    margin-top: 15rem;
+    margin-top: 17rem;
     height: 8rem;
-    width: 10rem;
+    width: 15rem;
     z-index: 2;
     font-size: 1.7rem;
     line-height: 2rem;
@@ -202,7 +217,6 @@ h2{
     margin-right: 5vw; 
     height: 1vh; 
     width: 50%;
-
 }
 
 
@@ -220,6 +234,7 @@ h2{
     grid-template-rows: auto;
     margin-bottom: 5rem; 
 }
+
 
 .text-box-1{
     display: flex; 
@@ -244,15 +259,15 @@ h2{
 }
 
 .text-box-2{
-    display: flex; 
     grid-area: "5";
+    display: flex; 
     flex-wrap: wrap;
     margin: 2rem;
 }
 
 .text-box-3{
+    grid-area: "8"; 
     display: flex; 
-    grid-area: "8";
     flex-wrap: wrap;
     margin: 2rem;
 }
@@ -261,4 +276,155 @@ h2{
 
 
 /*-----------------------------PRODUCTS------------------------------------*/
+
+
+.product-card-img{
+    display: flex;
+    margin: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.text-box-products{
+    display: flex;
+    word-wrap: wrap;
+    margin: 3%;
+    width: 95%;
+}
+
+.line-products{
+    display: block;
+    border-width:.5px;
+    border-color: black;
+    background-color: black;
+    margin: 1rem; 
+    height: 1vh; 
+    width: 92%;
+
+}
+
+
+
+.product-card-container1{
+    display: flex; 
+    grid-area: "1";
+    flex-direction: column;
+}
+
+.product-card-container2{
+    display: flex; 
+    grid-area: "2";
+    flex-direction: column;
+
+}
+.product-card-container3{
+    display: flex; 
+    grid-area: "3";
+    flex-direction: column;
+
+}
+
+.product-card-container4{
+    display: flex; 
+    grid-area: "4";
+    flex-direction: column;
+
+}
+
+.product-card-container5{
+    display: flex; 
+    grid-area: "5";
+    flex-direction: column;
+
+}
+.product-card-container6{
+    display: flex; 
+    grid-area: "6";
+    flex-direction: column;
+
+}
+
+
+.product-card-container7{
+    display: flex; 
+    grid-area: "7";
+    flex-direction: column;
+
+}
+
+.product-card-container8{
+    display: flex; 
+    grid-area: "8";
+    flex-direction: column;
+
+}
+.product-card-container9{
+    display: flex; 
+    grid-area: "9";
+    flex-direction: column;
+
+}
+
+.img1{
+    margin-left: -5rem; 
+    margin-top: -7rem;
+}
+.img2{
+    margin-left: -10rem;
+    margin-top: -3.7rem;
+}
+.img3{
+    margin-left: -5rem; 
+    margin-top: -7rem;
+}
+.img4{
+    margin-left: -10rem;
+    margin-top: -7rem;
+}
+.img5{
+    margin-left: 0rem;
+    margin-top: -6.5rem;
+    margin-bottom: -7rem;
+    width: 100%;
+}
+.img6{
+    margin-left: -5rem; 
+    margin-top: -7rem;
+}
+.img7{
+    margin-left: -10rem;
+    margin-top: -3.7rem;
+}
+.img8{
+    margin-left: -10rem; 
+    margin-bottom: -2rem;
+}
+.img9{
+    margin-left: -10rem;
+    margin-top: -3.7rem;
+}
+.purchase-container{
+    display: flex;
+    flex-direction: row;
+    height: 8rem; 
+    justify-content: space-between;
+    align-content: center;
+    margin: 1rem; 
+
+}
+.learn-more{
+    padding: .2rem;
+    color:#BF7631;
+    text-decoration: underline;
+}
+.add-to-cart{
+    background-color: #BF7631;
+    color: white;
+    height: 15%;
+    padding: .2rem;
+    margin-top: .75rem;
+}
+
+
 
