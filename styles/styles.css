@@ -253,9 +253,10 @@ h3{
     
     .text-left{
         z-index: 1;
+        margin-left: 1.2rem;
     }
     .text-right{
-        margin-left: 14rem;
+        margin-left: 16rem;
         z-index: 1;
     }
     .hands{
